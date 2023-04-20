@@ -13,8 +13,8 @@ console.log(v.make)
 
 //TO DO: Code the Car subclass here or in index.js file, i.e. class Car extends Vehicle ...
 
-class Car extends VehicleModule {
-   constructor(maximumPassengers, passengers, numberOfWheels, maximumSpeed, fuel, scheduleService) {
+class Car extends VehicleModule.Vehicle {
+   constructor(make, model, year, color, mileage) {
     super(make, model, year, color, mileage);
     this.maximumPassengers = 5;
     this.passengers = 0;
@@ -51,7 +51,7 @@ loadPassenger(num) {
 
         }
     } else {
-        console.log(this.model + " " + this.make + "has no more room!");
+        console.log(this.model + " " + this.make + " " + "has no more room!");
     }
 }
 
